@@ -166,4 +166,37 @@ const chef = {
 
 // Qual è il metodo migliore per clonare l’oggetto chef, e perché? //* Ti risponderei volentieri ma non lo so, bisogna vedere se usi la copia per modificare l oggetto o se hai bisogno dei metodi che contiene (forse volevi un altra risposta pero boh)
 
+/* const chefCopy = {
+  ...chef,
+  restaurant: {
+    ...chef.restaurant,
+    adress: {
+      ...chef.restaurant.adress,
+    },
+  },
+}; */
+
 //#######################################################
+
+//* 🎯 Snack  (Bonus)
+/* 
+Crea una funzione che permette la copia profonda (deep copy) di un oggetto, che copia anche i suoi metodi (proprietà che contengono funzioni). Usa l’oggetto di Code Question 6 come test.
+
+⚠️ Serve usare una funzione ricorsiva! (fai un po’ di ricerca). 
+*/
+
+/* function deepCopy(obj) {
+  if (typeof obj !== "object") {
+    return obj;
+  }
+  const copy = {};
+  for (const key in obj) {
+    const value = obg[key];
+    if (typeof value !== "object") {
+      copy[key] = value;
+    } else {
+      copy[key] = deepCopy(value);
+    }
+    return copy;
+  }
+} */
